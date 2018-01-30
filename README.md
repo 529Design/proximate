@@ -1,4 +1,4 @@
-# School_Web_PHPMYSQL
+# School_Web_EventApp
 
 This Directory Contains A PHP web application from Buffalo State College
 
