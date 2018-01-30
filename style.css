@@ -1,0 +1,39 @@
+#map {
+    height: 100%;
+    text-transform: capitalize;
+}
+
+
+/* Optional: Makes the sample page fill the window. */
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.custom {
+    width: 50%;
+    margin: 0 auto;
+    min-width: 350px;
+}
+
+.panel {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.panel-heading {
+    text-align: center;
+}
+
+h4 {
+    font-size: 4em;
+}
+
+h3 {
+    text-align: center;
+}
