@@ -7,7 +7,7 @@ require 'header.php';
 //coords for buffalo
 //$lat =42.886447;
 //$lon =-78.878369;
-
+//test changes
 
 
 //Processes form data from launch.php
