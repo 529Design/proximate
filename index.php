@@ -7,21 +7,33 @@ require 'header.php';
 //coords for buffalo
 //$lat =42.886447;
 //$lon =-78.878369;
-//test changes
 
+$_SESSION["lat"] = 42.886447;
+$_SESSION["lon"] = -78.878369;
+$_SESSION["location"] = "Buffalo";
 
+require 'nav.php';
+require 'mapGen.php';
+
+/*CHANGE FOR LOCAL/LIVE SERVER
 //Processes form data from launch.php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        
         if (empty($_POST["location"])) {
         //automatic location using javascript
-        }else{
+        }else{    
             $tempLocation = $_POST["location"];
             $tempArray = geocode($tempLocation);
             $_SESSION["lat"] = $tempArray['latitude'];
             $_SESSION["lon"] = $tempArray['longitude'];
+            //$_SESSION["lat"] = 42.886447;
+            //$_SESSION["lon"] = -78.878369;
             $_SESSION["location"] = $tempLocation;
         }
     }
+
+  
+
 
 //returns user to home screen by destroying the session
     if (isset($_GET['home'])){
@@ -39,5 +51,5 @@ require 'header.php';
         require 'nav.php';
         require 'mapGen.php';
     }
-
+*/
 ?>
